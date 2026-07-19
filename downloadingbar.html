@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Download Simulator</title>
+    <style>
+        *{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#0f172a;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+}
+
+.container{
+    width:420px;
+    background:white;
+    padding:30px;
+    border-radius:15px;
+    text-align:center;
+    box-shadow:0 0 20px rgba(0,0,0,.2);
+}
+
+h2{
+    margin-bottom:25px;
+}
+
+.progress-box{
+    width:90%;
+    height:25px;
+    background:#ddd;
+    border-radius:30px;
+    overflow:hidden;
+}
+
+#progress{
+    width:0%;
+    height:100%;
+    background:limegreen;
+   
+}
+
+#percentage{
+    margin-top:15px;
+    font-size:20px;
+    font-weight:bold;
+}
+
+button{
+    margin-top:25px;
+    padding:12px 20px;
+    border:none;
+    border-radius:8px;
+    background:#2563eb;
+    color:white;
+    cursor:pointer;
+    font-size:16px;
+}
+
+button:hover{
+    background:#1d4ed8;
+}
+
+#status{
+    margin-top:20px;
+    color:green;
+    font-weight:bold;
+}
+    </style>
+</head>
+<body>
+
+<div class="container">
+
+    <h2>Download Simulator</h2>
+
+    <div class="progress-box">
+
+        <div id="progress"></div>
+
+    </div>
+
+    <p id="percentage">0%</p>
+
+    <button id="downloadBtn">Start Download</button>
+
+    <p id="status"></p>
+
+</div>
+
+<script src="downloadingbar.JS"></script>
+
+</body>
+</html>
