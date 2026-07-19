@@ -4,4 +4,4 @@ count = 3;
 setTimeout(()=>{
     if(count>=1)
         mainBox.style.display="none";
-},3000);
+},3000)
